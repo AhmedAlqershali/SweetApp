@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="https://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".FilterActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/colse_filter"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/cancel"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الفلتر"
+            android:textSize="26dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="end"/>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="https://schemas.android.com/apk/res-auto"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.EditText"
+        android:drawableLeft="@drawable/calendar_tool"
+        android:text="1/1/2020"
+        android:gravity="end"
+        android:padding="16dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <Spinner
+            android:id="@+id/spinner_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="28dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#707070"
+        android:layout_marginTop="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rangeTextMin"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:text="يبدأ السعر من:"
+            android:gravity="end"
+            android:padding="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rangeTextMax"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:text="أقصى سعر:"
+            android:padding="6dp"/>
+
+
+
+
+    </LinearLayout>
+    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+        android:id="@+id/rangeSeekbar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:corner_radius="10"
+        app:min_value="0"
+        app:max_value="1000"
+        app:steps="20"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        app:bar_color="#8990C4"
+        app:bar_highlight_color="#2434AD"
+        app:left_thumb_color="#1A246D"
+        app:right_thumb_color="#1A246D"
+        app:left_thumb_color_pressed="#030B47"
+        app:right_thumb_color_pressed="#030B47"
+        app:data_type="_integer"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#707070"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="التقييم"
+        android:textSize="26dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        android:layout_gravity="end"/>
+
+
+    <RatingBar
+        android:id="@+id/ratingBar_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_show_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp"
+            android:text="عرض الشاليهات" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

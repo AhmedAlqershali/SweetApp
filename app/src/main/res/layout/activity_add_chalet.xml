@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bcakground"
+    tools:context=".AddChaletActivity">
+
+    <ImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_back"
+
+        />
+
+
+
+
+    <!--    Img Chalet-->
+    <ImageView
+        android:id="@+id/Img_chalet"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+
+
+        />
+    <!--       name chalet    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+
+        >
+
+        <EditText
+            android:id="@+id/ed_nameChalet"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="90dp"
+            android:background="@color/green"
+
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="اسم الشاليه: "
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <!--       Titel chalet    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+
+
+        >
+
+        <EditText
+            android:id="@+id/ed_nameaddress"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/green"
+
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="عنوان الشاليه: "
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <!--       number is  chalet Owner   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+
+
+        >
+
+        <EditText
+            android:id="@+id/ed_numberisPhone"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:background="@color/green"
+
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="رقم صاحب الشاليه: "
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+    <!--      Salary is  chalet and The number of hours  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+
+
+        >
+        <EditText
+            android:id="@+id/ed_numOfHours"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@color/green"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="عدد الساعات : "
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+
+        <EditText
+            android:id="@+id/ed_salarychalet"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/green"
+
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="سعر الشاليه: "
+
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/Services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:text="الخدمات"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+
+
+
+    <!--       TextView 1   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/txt_Services1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/green"
+            android:text="Wifi "
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txt_Services2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/green"
+            android:text=" ملعب"
+            android:gravity="center"
+
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/txt_Services3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:background="@color/green"
+            android:text="بركة سباحة للكبار"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <!--      TextView 2  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/txt_Services4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:text="المطبخ"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txt_Services5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:text="بلياردو"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/txt_Services6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/green"
+            android:text="بركة سباحة للصغار"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <!--       TextView 3   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/txt_Services7"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/green"
+            android:text="تنس طاولة"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/txt_Services8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="استيريو"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_Services9"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:background="@color/green"
+            android:text="المرآب"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_addchalet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="حفظ"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+</LinearLayout>
+</ScrollView>

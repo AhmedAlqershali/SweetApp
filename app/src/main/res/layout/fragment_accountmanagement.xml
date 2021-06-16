@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bcakground"
+        android:orientation="vertical"
+        tools:context=".ui.accountManagement.AccountManagementFragment">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_tenant"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/splash"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <EditText
+            android:id="@+id/ed_TenantName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:hint="الأسم الرباعي"
+            android:textColorHint="@color/black"
+
+            />
+
+
+        <EditText
+            android:id="@+id/ed_TenantPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:hint="رقم الهاتف"
+            android:textColorHint="@color/black" />
+
+
+        <EditText
+            android:id="@+id/ed_TenantEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:hint="البريد الالكتروني"
+            android:textColorHint="@color/black" />
+
+
+
+
+        <Button
+            android:id="@+id/edit_Tenant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="تعديل بيانات الحساب"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button"
+            />
+
+
+    </LinearLayout>

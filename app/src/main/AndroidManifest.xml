@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sweetapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SweetApp">
+        <activity android:name=".PopUpWindowChalet"></activity>
+        <activity android:name=".TenantOrderStatusActivity" />
+
+        <service
+            android:name=".Service.ListenOrderService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".OrderStatusActivity" />
+        <activity android:name=".ShowFilterActivity" />
+        <activity android:name=".FilterActivity" />
+        <activity android:name=".ReservationOfChaletActivity" />
+        <activity android:name=".TenantSingUpActivity" />
+        <activity android:name=".TenantSingUpOrLoginActivity" />
+        <activity
+            android:name=".TenantMainActivity"
+            android:label="@string/title_activity_tenant_main"
+            android:theme="@style/Theme.SweetApp.NoActionBar" />
+        <activity
+            android:name=".DetailsTenantActivity"
+            android:label="@string/title_activity_tenant_main"
+            android:theme="@style/Theme.SweetApp.NoActionBar" />
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".TenantLoginActivity" />
+        <activity android:name=".EditChaletActivity" />
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".AddChaletActivity" />
+        <activity android:name=".ChooseTypeActivity" />
+        <activity android:name=".ChalatOwnetLoginActivity" />
+        <activity android:name=".ChaletOwnerSingupActivity" />
+        <activity android:name=".ChaletOwnerSingUpOrLoginActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SweetApp.NoActionBar" />
+    </application>
+
+</manifest>
