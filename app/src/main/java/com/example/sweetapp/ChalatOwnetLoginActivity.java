@@ -4,11 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +26,7 @@ public class ChalatOwnetLoginActivity extends AppCompatActivity {
     private Button ChaletOwnerLoginbtn;
     private FirebaseAuth mAuth;
     String Email,Password;
+    private ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +37,7 @@ public class ChalatOwnetLoginActivity extends AppCompatActivity {
         ChaletOwnerLoginEmail  =findViewById(R.id.ChaletOwnerLoginEmail);
         ChaletOwnerLoginbtn  =findViewById(R.id.ChaletOwnerLoginbtn);
         ChaletOwnerForgetPass  =findViewById(R.id.ChaletOwnerForgetPass);
-
+        back=findViewById(R.id.back_Chalet_Owner_Login);
         mAuth = FirebaseAuth.getInstance();
         ChaletOwnerForgetPass.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +45,14 @@ public class ChalatOwnetLoginActivity extends AppCompatActivity {
 //                Intent intent = new Intent(ChalatOwnetLoginActivity.this,ForgetPasswordActivity.class);
 //                startActivity(intent);
 //                finish();
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ChalatOwnetLoginActivity.this,ChaletOwnerSingUpOrLoginActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 

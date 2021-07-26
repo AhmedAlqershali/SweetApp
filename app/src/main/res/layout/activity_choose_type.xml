@@ -30,7 +30,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:backgroundTint="@color/teal_700"
-        android:text="التسجيل "
+        android:text="صاحب الشاليه "
         android:textSize="16sp"
         android:gravity="center"
         android:textColor="@android:color/background_light"
@@ -43,7 +43,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="تسجيل  الدخول"
+        android:text="المستأجر"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:backgroundTint="@color/teal_700"
