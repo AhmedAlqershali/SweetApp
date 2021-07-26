@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/bcakground"
+    android:background="@drawable/gradient"
+    android:padding="16dp"
     tools:context=".ChaletOwnerSingUpOrLoginActivity">
 
 
@@ -17,28 +17,42 @@
 
         />
 
-    <Button
+
+    <com.manojbhadane.QButton
         android:id="@+id/chalatOwnerSingup_btn"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginRight="80dp"
-        android:background="@drawable/edit_text"
-        android:text="التسجيل"
-        android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/teal_700"
+        android:gravity="center"
+        android:text="التسجيل "
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        app:qb_radius="100"
+        app:qb_strokeColor="@color/teal_200"
+        app:qb_strokeWidth="5" />
 
-    <Button
+    <com.manojbhadane.QButton
         android:id="@+id/chalatOwnerLogin_btn"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="80dp"
-        android:background="@drawable/edit_text"
-        android:text="تسجيل الدخول"
-        android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/teal_700"
+        android:gravity="center"
+        android:text="تسجيل  الدخول"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        app:qb_radius="100"
+        app:qb_strokeColor="@color/teal_200"
+        app:qb_strokeWidth="5" />
 
-</LinearLayout>
+
+</RelativeLayout>
+
+

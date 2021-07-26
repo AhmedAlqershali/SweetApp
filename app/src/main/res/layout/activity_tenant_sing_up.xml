@@ -1,105 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bcakground"
-    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    android:padding="16dp"
     tools:context=".TenantSingUpActivity">
-
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
-
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="-160dp"
         android:src="@drawable/icon_back"
 
         />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/splash_image"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/splash"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="2dp" />
-
-    <EditText
-        android:id="@+id/TenantName"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="50dp"
-        android:background="@color/green"
-        android:gravity="center"
-        android:hint="الأسم الرباعي"
-        android:textColorHint="@color/black"
-
-        />
-
-
-    <EditText
-        android:id="@+id/TenantPhone"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="50dp"
-        android:background="@color/green"
-        android:gravity="center"
-        android:hint="رقم الهاتف"
-        android:textColorHint="@color/black" />
-
-
-    <EditText
-        android:id="@+id/TenantEmail"
-
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="50dp"
-        android:background="@color/green"
-        android:gravity="center"
-        android:hint="البريد الالكتروني"
-        android:textColorHint="@color/black" />
-
-
-    <EditText
-        android:id="@+id/TenantPassword"
-
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="50dp"
-        android:background="@color/green"
-        android:gravity="center"
-        android:hint="كلمة المرور"
-        android:textColorHint="@color/black" />
-
-    <Button
-        android:id="@+id/TenantRegister"
-
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:text="التسجيل"
-        android:gravity="center"
+        android:layout_gravity="center">
 
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/button"
+        <androidx.cardview.widget.CardView
+            android:layout_width="390dp"
+            android:layout_height="370dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
 
-        />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/TenantName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="الأسم الرباعي"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/TenantPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="رقم الهاتف"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/emailError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/TenantEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="البريد الالكتروني"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/TenantPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="كلمة المرور"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
 
 
-</LinearLayout>
+                <com.manojbhadane.QButton
+                    android:id="@+id/TenantRegister"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="التسجيل"
+                    android:textSize="16sp"
+android:backgroundTint="@color/teal_700"
+                    android:textColor="@android:color/background_light"
+                    app:qb_radius="100"
+                    app:qb_strokeColor="@color/teal_200"
+                    app:qb_strokeWidth="5" />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-70dp"
+        android:background="@drawable/round_background"
+        android:padding="15dp"
+        android:src="@drawable/profile"/>
+
+</RelativeLayout>
