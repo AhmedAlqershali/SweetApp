@@ -9,6 +9,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +24,7 @@ public class TenantLoginActivity extends AppCompatActivity {
     private EditText TenantLoginPassword,TenantLoginEmail;
     private Button TenantLoginbtn;
     private FirebaseAuth mAuth;
+    private ImageView back;
     String Email,Password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class TenantLoginActivity extends AppCompatActivity {
         TenantLoginEmail  =findViewById(R.id.TenantLoginEmail);
         TenantLoginbtn  =findViewById(R.id.TenantLoginbtn);
         TenantForgetPass  =findViewById(R.id.TenantForgetPass);
+        back=findViewById(R.id.back_Tenant_Login);
 
         mAuth = FirebaseAuth.getInstance();
         TenantForgetPass.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +45,14 @@ public class TenantLoginActivity extends AppCompatActivity {
                 finish();
             }
         });
-
+back.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent=new Intent(TenantLoginActivity.this,TenantSingUpOrLoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
+});
         TenantLoginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,6 +60,7 @@ public class TenantLoginActivity extends AppCompatActivity {
             }
         });
     }
+
 
     private void singin() {
         Email= TenantLoginEmail.getText().toString().trim();

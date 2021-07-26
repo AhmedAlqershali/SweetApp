@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.sweetapp.R;
@@ -29,6 +30,7 @@ public class TenantSingUpActivity extends AppCompatActivity {
     String Email, Password,Uid,Name,PhoneNumber;
     private FirebaseDatabase database;
     private DatabaseReference rootRef;
+    private ImageView back;
 
 
     @Override
@@ -41,6 +43,7 @@ public class TenantSingUpActivity extends AppCompatActivity {
         TenantEmail =findViewById(R.id.TenantEmail);
         TenantPassword =findViewById(R.id.TenantPassword);
         TenantRegister =findViewById(R.id.TenantRegister);
+        back=findViewById(R.id.back_Chalet_Owner_SgintUp);
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
 
@@ -49,6 +52,14 @@ public class TenantSingUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 registerTenant();
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(TenantSingUpActivity.this,TenantSingUpOrLoginActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
