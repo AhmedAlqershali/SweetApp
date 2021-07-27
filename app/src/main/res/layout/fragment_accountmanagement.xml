@@ -102,7 +102,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_margin="20dp"
-                    android:backgroundT="@drawable/button_gradient"
+                    android:background="@drawable/button_gradient"
                     android:text="تعديل بيانات لحساب"
                     android:textColor="@android:color/white"
                     android:textSize="16sp" />

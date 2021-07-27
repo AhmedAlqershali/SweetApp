@@ -65,7 +65,7 @@ public class AccountManagementFragment extends Fragment {
         TenantName = root.findViewById(R.id.ed_TenantName);
         TenantPhone = root.findViewById(R.id.ed_TenantPhone);
         TenantEmail = root.findViewById(R.id.ed_TenantEmail);
-        image_tenant = root.findViewById(R.id.image_tenant);
+//        image_tenant = root.findViewById(R.id.image_tenant);
         TenantRegister = root.findViewById(R.id.edit_Tenant);
         Toast.makeText(getContext(), "sss"+Uid, Toast.LENGTH_SHORT).show();
         Log.d("e",mAuth.getUid());
