@@ -59,24 +59,24 @@ public class ListenOrderService extends Service implements ChildEventListener {
     }
 
     private void showNotification(String key, Request request) {
-        Intent intent = new Intent(getBaseContext(), TenantOrderStatusActivity.class);
-        intent.putExtra("phone",request.getKey());
-        PendingIntent pendingIntent = PendingIntent.getActivity(getBaseContext(),0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
-
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(getBaseContext());
-
-        builder.setAutoCancel(true)
-                .setDefaults(Notification.DEFAULT_ALL)
-                .setWhen(System.currentTimeMillis())
-                .setTicker("EDMTDev")
-                .setContentInfo("Your order was updated")
-                .setContentText("الحجز رقم #"+key+"حالة الطلب:"+ Common.convertCodeToStatus(request.getStatus()))
-                .setContentIntent(pendingIntent)
-                .setContentInfo("Info")
-                .setSmallIcon(R.mipmap.ic_launcher);
-
-        NotificationManager notificationManager = (NotificationManager) getBaseContext().getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(1,builder.build());
+//        Intent intent = new Intent(getBaseContext(), TenantOrderStatusActivity.class);
+//        intent.putExtra("phone",request.getKey());
+//        PendingIntent pendingIntent = PendingIntent.getActivity(getBaseContext(),0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
+//
+//        NotificationCompat.Builder builder = new NotificationCompat.Builder(getBaseContext());
+//
+//        builder.setAutoCancel(true)
+//                .setDefaults(Notification.DEFAULT_ALL)
+//                .setWhen(System.currentTimeMillis())
+//                .setTicker("EDMTDev")
+//                .setContentInfo("Your order was updated")
+//                .setContentText("الحجز رقم #"+key+"حالة الطلب:"+ Common.convertCodeToStatus(request.getStatus()))
+//                .setContentIntent(pendingIntent)
+//                .setContentInfo("Info")
+//                .setSmallIcon(R.mipmap.ic_launcher);
+//
+//        NotificationManager notificationManager = (NotificationManager) getBaseContext().getSystemService(Context.NOTIFICATION_SERVICE);
+//        notificationManager.notify(1,builder.build());
     }
 
     @Override

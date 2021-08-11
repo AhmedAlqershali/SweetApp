@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     >
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton_Favorites"
         android:layout_width="80dp"
