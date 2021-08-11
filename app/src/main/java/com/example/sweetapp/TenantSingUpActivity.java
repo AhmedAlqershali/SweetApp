@@ -43,7 +43,7 @@ public class TenantSingUpActivity extends AppCompatActivity {
         TenantEmail =findViewById(R.id.TenantEmail);
         TenantPassword =findViewById(R.id.TenantPassword);
         TenantRegister =findViewById(R.id.TenantRegister);
-        back=findViewById(R.id.back_Chalet_Owner_SgintUp);
+//        back=findViewById(R.id.back_Chalet_Owner_SgintUp);
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
 
@@ -55,14 +55,14 @@ public class TenantSingUpActivity extends AppCompatActivity {
             }
         });
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(TenantSingUpActivity.this,TenantSingUpOrLoginActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+//        back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent=new Intent(TenantSingUpActivity.this,TenantSingUpOrLoginActivity.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
 
 
     }
