@@ -3,47 +3,57 @@ package com.example.sweetapp.model;
 import com.example.sweetapp.R;
 
 public class Request {
-    String key,chaletRequired,phone,theNameOrder,bookingDate,bookingPeriod,status;
-
+ String chaletId, name_chalet, name_applicant, booking_date, Booking_period,status;
     public Request() {
     }
 
-    public Request(String key,String chaletRequired,String phone,String status, String theNameOrder, String bookingDate, String bookingPeriod) {
-        this.key = key;
-        this.chaletRequired = chaletRequired;
-        this.phone = phone;
+    public Request(String chaletId, String name_chalet, String name_applicant, String booking_date, String booking_period,String status) {
+        this.chaletId = chaletId;
+        this.name_chalet = name_chalet;
+        this.name_applicant = name_applicant;
+        this.booking_date = booking_date;
+        Booking_period = booking_period;
         this.status = status;
-        this.theNameOrder = theNameOrder;
-        this.bookingDate = bookingDate;
-        this.bookingPeriod = bookingPeriod;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getChaletId() {
+        return chaletId;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setChaletId(String chaletId) {
+        this.chaletId = chaletId;
     }
 
-    public String getKey() {
-        return key;
+    public String getName_chalet() {
+        return name_chalet;
     }
 
-    public void setKey(String key) {
-        this.key = key;
+    public void setName_chalet(String name_chalet) {
+        this.name_chalet = name_chalet;
     }
 
-    public String getChaletRequired() {
-        return chaletRequired;
+    public String getName_applicant() {
+        return name_applicant;
     }
 
-    public void setChaletRequired(String chaletRequired) {
-        this.chaletRequired = chaletRequired;
+    public void setName_applicant(String name_applicant) {
+        this.name_applicant = name_applicant;
     }
 
-    public String getTheNameOrder() {
-        return theNameOrder;
+    public String getBooking_date() {
+        return booking_date;
+    }
+
+    public void setBooking_date(String booking_date) {
+        this.booking_date = booking_date;
+    }
+
+    public String getBooking_period() {
+        return Booking_period;
+    }
+
+    public void setBooking_period(String booking_period) {
+        Booking_period = booking_period;
     }
 
     public String getStatus() {
@@ -52,25 +62,5 @@ public class Request {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public void setTheNameOrder(String theNameOrder) {
-        this.theNameOrder = theNameOrder;
-    }
-
-    public String getBookingDate() {
-        return bookingDate;
-    }
-
-    public void setBookingDate(String bookingDate) {
-        this.bookingDate = bookingDate;
-    }
-
-    public String getBookingPeriod() {
-        return bookingPeriod;
-    }
-
-    public void setBookingPeriod(String bookingPeriod) {
-        this.bookingPeriod = bookingPeriod;
     }
 }

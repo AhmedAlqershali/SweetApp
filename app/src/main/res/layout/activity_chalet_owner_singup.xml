@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/ic_baseline_favorite_border_off"
     android:gravity="center"
     android:padding="16dp"
     tools:context=".ChaletOwnerSingupActivity">

@@ -23,6 +23,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.sweetapp.Adapter.AdapterChaletlistOwner;
 import com.example.sweetapp.AddChaletActivity;
 import com.example.sweetapp.DetailsActivity;
+import com.example.sweetapp.DetailsTenantActivity;
 import com.example.sweetapp.MainActivity;
 import com.example.sweetapp.R;
 import com.example.sweetapp.model.ChaletListIteamModel;
@@ -83,7 +84,7 @@ public class ListOfChaletsFragment extends Fragment {
                     @Override
                     public void onItemClick(int position) {
                         Toast.makeText(getContext(), "" + position, Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getContext(), DetailsActivity.class);
+                        Intent intent = new Intent(getContext(), DetailsTenantActivity.class);
                         intent.putExtra("chaletId", models.get(position).getChaletId() + "");
                         getContext().startActivity(intent);
                     }

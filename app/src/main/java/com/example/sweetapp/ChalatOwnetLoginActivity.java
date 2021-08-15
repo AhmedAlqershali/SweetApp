@@ -42,9 +42,8 @@ public class ChalatOwnetLoginActivity extends AppCompatActivity {
         ChaletOwnerForgetPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(ChalatOwnetLoginActivity.this,ForgetPasswordActivity.class);
-//                startActivity(intent);
-//                finish();
+                Intent intent = new Intent(ChalatOwnetLoginActivity.this,ForgetPasswordActivity.class);
+                startActivity(intent);
             }
         });
         back.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +94,7 @@ public class ChalatOwnetLoginActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
+//                    String token = task.getResult().getToken();
                     finish();
                     Intent intent = new Intent(ChalatOwnetLoginActivity.this, MainActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

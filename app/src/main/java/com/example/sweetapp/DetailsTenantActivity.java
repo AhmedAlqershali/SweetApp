@@ -73,7 +73,7 @@ public class DetailsTenantActivity extends AppCompatActivity implements RatingDi
         mAuth = FirebaseAuth.getInstance();
 //        Intent intent = getIntent();
 //        chaletId = intent.getStringExtra("chaletId");
-        chaletId = getIntent().getExtras().getString("chaletTenantId");
+        chaletId = getIntent().getExtras().getString("chaletId");
 
         getProductsDetails(chaletId);
         ChaletsRefRating = FirebaseDatabase.getInstance().getReference("Sweet App").child("Rating");

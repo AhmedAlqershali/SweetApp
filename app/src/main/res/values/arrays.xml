@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="statusList">
+        <item>غير متاح حاليا</item>
+        <item>موافقة على الطلب</item>
+        <item>الغاء الطلب</item>
+    </string-array>
+</resources>

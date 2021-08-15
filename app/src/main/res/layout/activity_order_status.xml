@@ -12,6 +12,7 @@
         android:id="@+id/rec_orderstatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        tools:listitem="@layout/orderstatus_layout"
         />
 
 
