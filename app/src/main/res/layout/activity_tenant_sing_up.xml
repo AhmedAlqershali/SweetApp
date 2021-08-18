@@ -5,37 +5,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/login_bk"
     android:gravity="center"
     android:padding="16dp"
     tools:context=".TenantSingUpActivity">
-    <ImageView
-        android:id="@+id/back_Tenant_SgintUp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="-160dp"
-        android:src="@drawable/icon_back"
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="140dp"
+        android:text="Register"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#2661FA"
         />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:layout_height="match_parent">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
-            android:layout_height="370dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_marginBottom="4dp"
-            android:padding="8dp"
-            app:cardCornerRadius="4dp"
-            app:cardElevation="4dp">
+        <ImageView
+            android:id="@+id/back_Chalet_Owner_SgintUp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -124,7 +130,7 @@
                     android:layout_margin="10dp"
                     android:text="التسجيل"
                     android:textSize="16sp"
-android:backgroundTint="@color/teal_700"
+                    android:backgroundTint="@color/teal_700"
                     android:textColor="@android:color/background_light"
                     app:qb_radius="100"
                     app:qb_strokeColor="@color/teal_200"
@@ -133,17 +139,8 @@ android:backgroundTint="@color/teal_700"
 
 
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
+
     </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/profile"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-70dp"
-        android:background="@drawable/round_background"
-        android:padding="15dp"
-        android:src="@drawable/profile"/>
 
 </RelativeLayout>
