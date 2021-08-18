@@ -21,6 +21,7 @@ import android.view.MenuItem;
 import com.example.sweetapp.ui.accountManagement.AccountManagementFragment;
 import com.example.sweetapp.ui.listFavoritesFragment.ListFavoritesFragment;
 import com.example.sweetapp.ui.listOfChaletsTenant.ListOfChaletsTenantFragment;
+import com.example.sweetapp.ui.statusOfMyOrders.statusOfMyOrdersFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -90,7 +91,11 @@ public class TenantMainActivity extends AppCompatActivity {
             case R.id.nav_list_of_favorite_tenant:
                 getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_tenant, new ListFavoritesFragment()).commit();
                 mToolbar.setTitle("المفضلات");
+                break;
 
+            case R.id.nav_list_of_myrequests_tenant:
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_tenant, new statusOfMyOrdersFragment()).commit();
+                mToolbar.setTitle("قائمة طلباتي");
                 break;
             case R.id.nav_logout_tenant:
                 mAuth.signOut();

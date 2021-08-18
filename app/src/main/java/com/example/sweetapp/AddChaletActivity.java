@@ -3,6 +3,7 @@ package com.example.sweetapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -105,6 +106,72 @@ public class AddChaletActivity extends AppCompatActivity {
         txtServices7 =  findViewById(R.id.txt_Services7);
         txtServices8 =  findViewById(R.id.txt_Services8);
         txtServices9 =  findViewById(R.id.txt_Services9);
+
+        txtServices1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txtServices1.setBackgroundResource(R.color.purple_700);
+            }
+        });
+
+        txtServices2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txtServices1.setBackgroundResource(R.color.purple_700);
+            }
+        });
+
+        txtServices3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txtServices1.setBackgroundResource(R.color.purple_700);
+            }
+        });
+
+
+        txtServices4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txtServices1.setBackgroundResource(R.color.purple_700);
+            }
+        });
+
+        txtServices5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txtServices1.setBackgroundResource(R.color.purple_700);
+            }
+        });
+
+        txtServices6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txtServices1.setBackgroundResource(R.color.purple_700);
+            }
+        });
+
+        txtServices7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txtServices1.setBackgroundResource(R.color.purple_700);
+            }
+        });
+
+
+        txtServices8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txtServices1.setBackgroundResource(R.color.purple_700);
+            }
+        });
+
+
+        txtServices9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txtServices1.setBackgroundResource(R.color.purple_700);
+            }
+        });
 
 //
 //        Services.setOnClickListener(new View.OnClickListener() {

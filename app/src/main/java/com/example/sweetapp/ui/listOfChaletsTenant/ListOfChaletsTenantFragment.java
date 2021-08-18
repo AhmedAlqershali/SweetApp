@@ -71,7 +71,6 @@ public class ListOfChaletsTenantFragment extends Fragment {
         }
 
 //        listOfChaletsViewModel = new ViewModelProvider(this).get(ListOfChaletsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_listofchaletstenant, container, false);
 //        textView = root.findViewById(R.id.text_home);
         rec_chalitlist = root.findViewById(R.id.rec_chalitlist_tenant);
         ChaletsRef = FirebaseDatabase.getInstance().getReference().child("Sweet App").child("Chalet");
