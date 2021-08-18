@@ -10,16 +10,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bcakground"
+    android:background="@drawable/background_solid"
     tools:context=".EditChaletActivity">
 
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/icon_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:src="@drawable/ic_back"
 
         />
 
@@ -30,347 +29,93 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="10dp"
+        android:src="@drawable/gallery"
+        android:scaleType="centerCrop"/>
 
 
-        />
-    <!--       name chalet    -->
-    <LinearLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-
-
-        >
+        android:layout_marginTop="8dp">
 
         <EditText
             android:id="@+id/ed_nameChalet_edit"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="90dp"
-            android:background="@color/green"
-
-            android:textColor="@color/black"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="أسم الشاليه"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />
 
-            android:text="اسم الشاليه: "
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-
-    <!--       Titel chalet    -->
-    <LinearLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp"
-
-
         >
 
         <EditText
             android:id="@+id/ed_nameaddress_edit"
-            android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="20dp"
-            android:background="@color/green"
-
-            android:textColor="@color/black"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="عنوان الشاليه"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />
 
-            android:text="عنوان الشاليه: "
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-
-    <!--       number is  chalet Owner   -->
-    <LinearLayout
+    <!--       Titel chalet    -->
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp"
-
-
         >
 
         <EditText
             android:id="@+id/ed_numberisPhone_edit"
-            android:layout_width="170dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="60dp"
-            android:background="@color/green"
-
-            android:textColor="@color/black"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="رقم التواصل"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />
 
-            android:text="رقم صاحب الشاليه: "
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
-
-
-
-    <!--      Salary is  chalet and The number of hours  -->
-    <LinearLayout
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp"
-
-
         >
-        <EditText
-            android:id="@+id/ed_numOfHours_edit"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:background="@color/green"
-            android:textColor="@color/black"
-            android:layout_marginLeft="10dp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:text="عدد الساعات : "
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-
 
         <EditText
             android:id="@+id/ed_salarychalet_edit"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:background="@color/green"
-
-            android:textColor="@color/black"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="السعر"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />
 
-            android:text="سعر الشاليه: "
-
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-
-
-
-
-    </LinearLayout>
-    <Button
-        android:id="@+id/Services"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:layout_gravity="end"
-        android:layout_marginTop="10dp"
-        android:text="الخدمات"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        />
-
-
-
-
-
-
-
-
-
-    <!--       TextView 1   -->
-    <LinearLayout
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailError"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
 
-
-        >
-
-        <com.manojbhadane.QButton
-            android:id="@+id/txt_Services1"
-            android:layout_width="100dp"
+        <EditText
+            android:id="@+id/ed_numOfHours_edit"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="عدد ساعات العمل"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />
 
-            android:background="@color/green"
-            android:text="Wifi "
-            android:gravity="center"
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-        <TextView
-            android:id="@+id/txt_Services2"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-
-            android:background="@color/green"
-            android:text=" ملعب"
-            android:gravity="center"
-
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-
-        <TextView
-            android:id="@+id/txt_Services3"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-
-            android:background="@color/green"
-            android:text="بركة سباحة "
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-
-    </LinearLayout>
-
-    <!--      TextView 2  -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp"
-
-
-        >
-
-        <TextView
-            android:id="@+id/txt_Services4"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@color/green"
-            android:text="Wifi "
-            android:gravity="center"
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-        <TextView
-            android:id="@+id/txt_Services5"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="@color/green"
-            android:text=" ملعب"
-            android:gravity="center"
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-
-        <TextView
-            android:id="@+id/txt_Services6"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-
-            android:background="@color/green"
-            android:text="بركة سباحة "
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-
-    </LinearLayout>
-    <!--       TextView 3   -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp"
-
-
-        >
-
-        <TextView
-            android:id="@+id/txt_Services7"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-
-            android:background="@color/green"
-            android:text="Wifi "
-            android:gravity="center"
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-        <TextView
-            android:id="@+id/txt_Services8"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-
-            android:background="@color/green"
-            android:text=" ملعب"
-            android:gravity="center"
-
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-
-        <TextView
-            android:id="@+id/txt_Services9"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-
-            android:background="@color/green"
-            android:text="بركة سباحة "
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-
-    </LinearLayout>
-
-
-
-
-
-
-
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -383,8 +128,10 @@
         android:layout_gravity="center"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
         android:text="تعديل"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
 

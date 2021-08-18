@@ -95,6 +95,7 @@ public class EditChaletActivity extends AppCompatActivity {
         btn_edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 StoreProductInformation();
                 SaveProductInfoToDatabase();
 

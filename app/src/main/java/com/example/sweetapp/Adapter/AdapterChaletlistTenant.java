@@ -70,7 +70,7 @@ public class AdapterChaletlistTenant extends RecyclerView.Adapter<AdapterChaletl
 
 
         holder.tv_name_Chalet.setText(A_I_C.getName_Chalet());
-        holder.tv_Salary.setText(A_I_C.getPrice() + "");
+        holder.tv_Salary.setText(A_I_C.getPrice() +"$");
         holder.tv_Thenumberofhours_Chalet.setText(A_I_C.getNum_Of_Hours());
         holder.tv_Title_Chalet.setText(A_I_C.getAddress());
 

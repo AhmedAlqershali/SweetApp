@@ -5,32 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background_solid"
     tools:context=".ReservationOfChaletActivity">
 
-    <TextView
+
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="بيانات الحجز:"
-       android:layout_marginRight="26dp"
-       android:layout_marginLeft="26dp"
-        android:layout_marginTop="18dp"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        />
+        android:background="@color/teal_700"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:id="@+id/back_Chalet_Owner_Login_sginUp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_back"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="بيانات الحجز"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="26sp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         xmlns:card_view="https://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="10dp"
-        app:cardCornerRadius="20dp"
         app:cardBackgroundColor="@color/white"
         app:cardMaxElevation="12dp"
         app:cardPreventCornerOverlap="true"
         app:cardUseCompatPadding="true"
-        android:layout_marginLeft="26dp"
-        android:layout_marginRight="26dp">
+      >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -196,7 +219,11 @@
         android:id="@+id/btn_CompleteReservation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
         android:text="اكمال عملية الحجز"
+        android:textSize="16sp"
+        android:textColor="@color/white"
         android:layout_gravity="center"/>
 
 

@@ -9,18 +9,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bcakground"
+    android:background="@drawable/background_solid"
     tools:context=".DetailsActivity">
 
     <ImageView
 
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
-
-        android:layout_marginTop="10dp"
-        android:src="@drawable/icon_back"
-
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+       android:layout_margin="4dp"
+        android:src="@drawable/ic_back"
         />
 
 
@@ -29,9 +26,8 @@
         android:id="@+id/image_detalis"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/splash"
-
-
+        android:src="@drawable/b"
+        android:scaleType="centerCrop"
         />
 
 
@@ -42,27 +38,26 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="10dp"
-
-
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         >
 
         <TextView
             android:id="@+id/name_details"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_marginLeft="90dp"
             android:background="@color/green"
             android:text="شاليه النجوم"
             android:gravity="center"
             android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="18sp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:text="اسم الشاليه: "
-            android:layout_marginLeft="20dp"
             android:textSize="22sp"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -78,28 +73,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="15dp"
-
-
-        >
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"        >
 
         <TextView
             android:id="@+id/address_details"
-            android:layout_width="250dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
             android:layout_height="40dp"
-            android:layout_marginLeft="20dp"
             android:background="@color/green"
             android:text="غزة -شارع النصر"
             android:gravity="center"
             android:textColor="@color/black"
+            android:textSize="18sp"
+
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:text="عنوان الشاليه: "
-            android:layout_marginLeft="20dp"
             android:textSize="22sp"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -112,28 +106,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="15dp"
-
-
-        >
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"        >
 
         <TextView
             android:id="@+id/txt_numberisPhone_details"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_marginLeft="60dp"
+            android:layout_weight="1"
             android:background="@color/green"
             android:text="0597668446"
             android:gravity="center"
             android:textColor="@color/black"
+            android:textSize="18sp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:text="رقم صاحب الشاليه: "
-            android:layout_marginLeft="20dp"
             android:textSize="22sp"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -147,7 +139,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
 
 
         >
@@ -157,41 +149,44 @@
             android:layout_height="40dp"
             android:background="@color/green"
             android:text="10ساعات"
+            android:textSize="14sp"
             android:gravity="center"
             android:textColor="@color/black"
+            android:layout_margin="4dp"
             />
 
         <TextView
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:text="عدد ساعات الفترة: "
+            android:text="عدد ساعات العمل: "
             android:textSize="20sp"
             android:textColor="@color/black"
             android:textStyle="bold"
+            android:layout_margin="4dp"
             />
 
 
         <TextView
             android:id="@+id/salary_details"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:background="@color/green"
-            android:text="500شيكل"
+            android:text="500 شيكل"
             android:gravity="center"
             android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_margin="4dp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:text="سعر الشاليه: "
-
             android:textSize="20sp"
             android:textColor="@color/black"
             android:textStyle="bold"
+            android:layout_margin="4dp"
             />
 
 
@@ -200,22 +195,14 @@
     </LinearLayout>
     <Button
         android:id="@+id/Services"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:layout_gravity="end"
+        android:backgroundTint="#4A4A4A"
         android:layout_marginTop="10dp"
         android:text="الخدمات"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold"
         />
-
-
-
-
-
-
 
 
 
@@ -226,48 +213,46 @@
         android:orientation="horizontal"
         android:layout_marginTop="15dp"
         android:gravity="center"
-
-
         >
 
-        <TextView
-            android:layout_width="100dp"
+        <com.manojbhadane.QButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:background="@color/green"
-            android:text="Wifi "
+            android:backgroundTint="@color/teal_800"
+            android:text="بركة سباحة للكبار"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center"
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
             />
-        <TextView
-            android:layout_width="100dp"
+        <com.manojbhadane.QButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:background="@color/green"
-            android:text=" ملعب"
+            android:backgroundTint="@color/teal_800"
+            android:text="ملعب"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center"
-
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
             />
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
+        <com.manojbhadane.QButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_800"
+        android:text="Wifi"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        />
 
-            android:background="@color/green"
-            android:text="بركة سباحة "
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
 
     </LinearLayout>
 
@@ -281,43 +266,43 @@
 
         >
 
-        <TextView
-            android:layout_width="100dp"
+        <com.manojbhadane.QButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:background="@color/green"
-            android:text="Wifi "
+            android:backgroundTint="@color/teal_800"
+            android:text="بركة سباحة للصغار"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center"
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-
-            android:background="@color/green"
-            android:text=" ملعب"
-            android:gravity="center"
-
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
             />
 
-        <TextView
-            android:layout_width="100dp"
+        <com.manojbhadane.QButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_800"
+            android:text="بلياردو"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
 
-            android:background="@color/green"
-            android:text="بركة سباحة "
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+        <com.manojbhadane.QButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_800"
+            android:text="المطبخ"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
             />
 
     </LinearLayout>
@@ -328,46 +313,44 @@
         android:orientation="horizontal"
         android:layout_marginTop="15dp"
         android:gravity="center"
-
+        android:layout_marginBottom="10dp"
         >
 
-        <TextView
-            android:layout_width="100dp"
+        <com.manojbhadane.QButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:background="@color/green"
-            android:text="Wifi "
+            android:backgroundTint="@color/teal_800"
+            android:text="تنس طاولة"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center"
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
             />
-        <TextView
-            android:layout_width="100dp"
+        <com.manojbhadane.QButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:background="@color/green"
-            android:text=" ملعب"
+            android:backgroundTint="@color/teal_800"
+            android:text="استيريو"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center"
-
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
             />
-
-        <TextView
-            android:layout_width="100dp"
+        <com.manojbhadane.QButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_800"
+            android:text="المرآب"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center"
-
-            android:background="@color/green"
-            android:text="بركة سباحة "
-            android:layout_marginLeft="20dp"
-            android:textSize="22sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
             />
 
     </LinearLayout>

@@ -181,7 +181,7 @@ public class ReservationOfChaletActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
-                            Intent idToList = new Intent(ReservationOfChaletActivity.this, MainActivity.class);
+                            Intent idToList = new Intent(ReservationOfChaletActivity.this, TenantMainActivity.class);
                             startActivity(idToList);
 //                            Intent idToLModel = new Intent(AddChaletActivity.this, AdapterChaletlistOwner.class);
 //                            idToList.putExtra("chaletId",chaletId);

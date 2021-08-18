@@ -115,6 +115,7 @@ public class ChaletOwnerSingupActivity extends AppCompatActivity {
                     userDetails.put("PhoneNumber", PhoneNumber);
                     userDetails.put("Email", Email);
                     userDetails.put("Password", Password);
+
                     rootRef.child("Users").child("Chalet Owner").child(Uid).child("Details").setValue(userDetails);
                     startActivity(new Intent(ChaletOwnerSingupActivity.this, MainActivity.class));
                     finish();

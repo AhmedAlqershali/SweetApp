@@ -38,7 +38,9 @@ public class ChalatOwnetLoginActivity extends AppCompatActivity {
         ChaletOwnerLoginbtn  =findViewById(R.id.ChaletOwnerLoginbtn);
         ChaletOwnerForgetPass  =findViewById(R.id.ChaletOwnerForgetPass);
         back=findViewById(R.id.back_Chalet_Owner_Login);
+
         mAuth = FirebaseAuth.getInstance();
+
         ChaletOwnerForgetPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +48,7 @@ public class ChalatOwnetLoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,6 +92,7 @@ public class ChalatOwnetLoginActivity extends AppCompatActivity {
             ChaletOwnerLoginPassword.requestFocus();
             return;
         }
+
         mAuth.signInWithEmailAndPassword(Email, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
