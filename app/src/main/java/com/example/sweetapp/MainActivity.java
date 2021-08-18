@@ -91,13 +91,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_list_of_chalets:
                 getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new ListOfChaletsFragment()).commit();
                 mToolbar.setTitle("قائمة الشالهات");
-
                 break;
             case R.id.nav_list_of_requests:
                 mToolbar.setTitle("قائمة الطلبات");
                 Intent orderIntent = new Intent(MainActivity.this,OrderStatusActivity.class);
                 startActivity(orderIntent);
-
                 break;
             case R.id.nav_logout:
                 mAuth.signOut();

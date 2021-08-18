@@ -32,8 +32,10 @@ public class ShowFilterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_filter);
+
         rec_chalitlist_filter = findViewById(R.id.rec_chalitlist_filter);
         rec_chalitlist_filter.setLayoutManager(new LinearLayoutManager(this));
+
         ChaletsRef = FirebaseDatabase.getInstance().getReference().child("Sweet App").child("Chalet");
         models = new ArrayList<>();
         valueEventListener = ChaletsRef.addValueEventListener(new ValueEventListener() {

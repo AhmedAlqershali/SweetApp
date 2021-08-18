@@ -106,14 +106,14 @@ public class AddChaletActivity extends AppCompatActivity {
         txtServices8 =  findViewById(R.id.txt_Services8);
         txtServices9 =  findViewById(R.id.txt_Services9);
 
-
-        Services.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                openPopUpWindow();
-            }
-        });
+//
+//        Services.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                openPopUpWindow();
+//            }
+//        });
 
         imgChalet.setOnClickListener(new View.OnClickListener() {
             @Override
