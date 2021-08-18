@@ -60,15 +60,13 @@ public class AdapterOrderStatus extends RecyclerView.Adapter<AdapterOrderStatus.
     public void onBindViewHolder(@NonNull Holder holder, int position) {
         Request A_I_C=adapterIteamChaletLists.get(position);
 
-
-        holder.txt_key.setText("#"+position);
+        int p = position + 1;
+        holder.txt_key.setText("#"+p);
         holder.tv_name_chaletRequired.setText(A_I_C.getName_chalet()+"");
         holder.txt_theNameOrder.setText(A_I_C.getName_applicant());
         holder.txt_bookingDate.setText(A_I_C.getBooking_date());
         holder.txt_bookingPeriod.setText(A_I_C.getBooking_period());
         holder.txt_status.setText(A_I_C.getStatus());
-
-
 
     }
 

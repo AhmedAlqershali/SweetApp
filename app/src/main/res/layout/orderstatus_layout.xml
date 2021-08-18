@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
     >
 
     <androidx.cardview.widget.CardView
@@ -13,26 +14,32 @@
         android:layout_height="wrap_content"
         app:cardElevation="10dp"
         app:cardBackgroundColor="@color/white"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true">
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
 
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="4dp">
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
 
             <TextView
                 android:id="@+id/txt_key"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="#1"
-                android:layout_weight="1"
-                android:textSize="18sp"
-                android:layout_margin="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
                 android:textColor="@color/black"
-                android:gravity="start"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 />
 
 
@@ -42,24 +49,29 @@
                 android:orientation="horizontal">
                 <TextView
                     android:id="@+id/txt_chaletRequired"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="شاليه الأمراء"
                     android:layout_weight="1"
                     android:textSize="18sp"
-                    android:layout_margin="4dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:gravity="center"
                     android:textColor="@color/black"
                     />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="أٍسم الشاليه المطلوب:"
-                    android:layout_weight="1"
                     android:textSize="18sp"
-                    android:layout_margin="4dp"
-                    android:gravity="center"
+                    android:gravity="right"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -67,26 +79,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <TextView
-                    android:id="@+id/txt_theNameOrder"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="أنس"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:layout_margin="4dp"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/txt_theNameOrder"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="70dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="أنس"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="صاحب الطلب:"
                     android:layout_weight="1"
                     android:textSize="18sp"
-                    android:layout_margin="4dp"
-                    android:gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="right"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -97,27 +116,33 @@
                 android:orientation="horizontal">
                 <TextView
                     android:id="@+id/txt_bookingDate"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="18dp"
-                    android:layout_margin="4dp"
-                    android:gravity="center"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="right"
                     android:textColor="@color/black"
                     android:text="01/01/2021"
                     android:drawablePadding="6dp"
                     />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="تاريخ الحجز:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:layout_margin="4dp"
-                    android:gravity="center"
+                    android:gravity="right"
+                    android:text="تاريخ الحجز:"
                     android:textColor="@color/black"
-                    android:textStyle="bold"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -125,24 +150,27 @@
                 android:orientation="horizontal">
                 <TextView
                     android:id="@+id/txt_bookingPeriod"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="الفترة الصباحية"
                     android:layout_weight="1"
                     android:textSize="18sp"
-                    android:layout_margin="4dp"
-                    android:gravity="center"
+                    android:layout_marginRight="70dp"
+                    android:gravity="right"
                     android:textColor="@color/black"
                     />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="فترة الحجز:"
                     android:layout_weight="1"
                     android:textSize="18sp"
-                    android:layout_margin="4dp"
-                    android:gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="right"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -153,23 +181,29 @@
 
                 <TextView
                     android:id="@+id/txt_status"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp"
-                    android:layout_margin="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
                     android:layout_weight="1"
-                    android:gravity="center"
+                    android:gravity="right"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:text="الشالية غير متاح حاليا"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="حالة الطلب:"
                     android:layout_weight="1"
                     android:textSize="18sp"
-                    android:layout_margin="4dp"
-                    android:gravity="center"
+                    android:gravity="right"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
 

@@ -78,7 +78,7 @@ public class EditChaletActivity extends AppCompatActivity {
                     txt_name_Edit.setText(chaletListIteamModel.getName_Chalet());
                     txt_salary_Edit.setText(chaletListIteamModel.getPrice()+"");
                     txt_address_Edit.setText(chaletListIteamModel.getAddress());
-                    txt_numberisPhone_Edit.setText(chaletListIteamModel.getPhone()+0);
+                    txt_numberisPhone_Edit.setText(chaletListIteamModel.getPhone());
                     txt_numOfHours_Edit.setText(chaletListIteamModel.getNum_Of_Hours());
                     Picasso.get().load(chaletListIteamModel.getImage()).into(iv_Edit);
 
@@ -202,11 +202,13 @@ public class EditChaletActivity extends AppCompatActivity {
         numOfHour = txt_numOfHours_Edit.getText().toString();
         price = txt_salary_Edit.getText().toString();
 
+        int priceChalet = Integer.parseInt(price);
+
         HashMap<String, Object> ChaletMap = new HashMap<>();
         ChaletMap.put("name_Chalet", name_Chalet);
         ChaletMap.put("image", downloadImageUrl);
         ChaletMap.put("address", address);
-        ChaletMap.put("price", price);
+        ChaletMap.put("price", priceChalet);
         ChaletMap.put("phone", phone);
         ChaletMap.put("num_Of_Hours", numOfHour);
 

@@ -12,11 +12,6 @@
         <activity android:name=".PopUpWindowChalet"></activity>
         <activity android:name=".TenantOrderStatusActivity" />
 
-        <service
-            android:name=".Service.ListenOrderService"
-            android:enabled="true"
-            android:exported="true" />
-
         <activity android:name=".OrderStatusActivity" />
         <activity android:name=".ShowFilterActivity" />
         <activity android:name=".FilterActivity" />
