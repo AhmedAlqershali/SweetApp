@@ -3,6 +3,7 @@ package com.example.sweetapp.ui.listOfChaletsTenant;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,8 +54,22 @@ public class ListOfChaletsTenantFragment extends Fragment {
     ArrayList<ChaletListIteamModel> models;
     ValueEventListener valueEventListener;
 
+    private static View root;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+        if (root != null) {
+            ViewGroup parent = (ViewGroup) root.getParent();
+            if (parent != null)
+                parent.removeView(root);
+        }
+        try {
+             root = inflater.inflate(R.layout.fragment_listofchaletstenant, container, false);
+
+        } catch (InflateException e) {
+            /* map is already there, just return view as it is */
+        }
+
 //        listOfChaletsViewModel = new ViewModelProvider(this).get(ListOfChaletsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_listofchaletstenant, container, false);
 //        textView = root.findViewById(R.id.text_home);

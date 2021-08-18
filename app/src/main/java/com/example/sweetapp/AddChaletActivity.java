@@ -33,6 +33,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.manojbhadane.QButton;
 import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
@@ -54,7 +55,7 @@ public class AddChaletActivity extends AppCompatActivity {
     ChaletListIteamModel list;
 
     ImageView imgChalet;
-    TextView txtServices1, txtServices2, txtServices3, txtServices4, txtServices5, txtServices6,
+    QButton txtServices1, txtServices2, txtServices3, txtServices4, txtServices5, txtServices6,
             txtServices7, txtServices8, txtServices9;
     EditText edNameChalet, edaddress, edsalary, ednumberisPhone, ednumOfHours;
     Button btn_add;
@@ -95,15 +96,15 @@ public class AddChaletActivity extends AppCompatActivity {
         loadingBar = new ProgressDialog(this);
 
 
-        txtServices1 = (TextView) findViewById(R.id.txt_Services1);
-        txtServices2 = (TextView) findViewById(R.id.txt_Services2);
-        txtServices3 = (TextView) findViewById(R.id.txt_Services3);
-        txtServices4 = (TextView) findViewById(R.id.txt_Services4);
-        txtServices5 = (TextView) findViewById(R.id.txt_Services5);
-        txtServices6 = (TextView) findViewById(R.id.txt_Services6);
-        txtServices7 = (TextView) findViewById(R.id.txt_Services7);
-        txtServices8 = (TextView) findViewById(R.id.txt_Services8);
-        txtServices9 = (TextView) findViewById(R.id.txt_Services9);
+        txtServices1 =  findViewById(R.id.txt_Services1);
+        txtServices2 =  findViewById(R.id.txt_Services2);
+        txtServices3 =  findViewById(R.id.txt_Services3);
+        txtServices4 = findViewById(R.id.txt_Services4);
+        txtServices5 =  findViewById(R.id.txt_Services5);
+        txtServices6 =  findViewById(R.id.txt_Services6);
+        txtServices7 =  findViewById(R.id.txt_Services7);
+        txtServices8 =  findViewById(R.id.txt_Services8);
+        txtServices9 =  findViewById(R.id.txt_Services9);
 
 
         Services.setOnClickListener(new View.OnClickListener() {

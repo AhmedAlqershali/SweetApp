@@ -12,6 +12,7 @@
     <string name="menu_account_management">إدارة الحساب</string>
     <string name="menu_list_of_chalets">قائمة الشاليهات</string>
     <string name="menu_list_of_requests">قائمة الطلبات</string>
+    <string name="menu_list_of_myrequests">قائمة طلباتي</string>
     <string name="menu_favorite">المفضلة</string>
     <string name="menu_logout">تسجيل الخروج</string>
     <string name="title_activity_tenant_main">TenantMainActivity</string>
@@ -19,4 +20,13 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">البريد الالكتروني</string>
+    <string name="login_password_hint">كلمة السر</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">نسيت كلمة المرور</string>
+    <string name="login_name_hint">الأسم الرباعي</string>
+    <string name="login_mobile_number_hint">رقم الهاتف</string>
 </resources>

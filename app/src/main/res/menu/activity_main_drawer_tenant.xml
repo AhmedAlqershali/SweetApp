@@ -14,8 +14,13 @@
             android:title="@string/menu_list_of_chalets" />
         <item
             android:id="@+id/nav_list_of_favorite_tenant"
-            android:icon="@drawable/ic_baseline_hourglass_empty_24"
+            android:icon="@drawable/ic_baseline_favorite_border_off"
             android:title="@string/menu_favorite" />
+
+        <item
+            android:id="@+id/nav_list_of_myrequests_tenant"
+            android:icon="@drawable/ic_baseline_hourglass_empty_24"
+            android:title="@string/menu_list_of_myrequests" />
 
         <item
             android:id="@+id/nav_logout_tenant"

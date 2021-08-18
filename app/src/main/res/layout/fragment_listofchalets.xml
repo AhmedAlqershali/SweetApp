@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.listOfChalets.ListOfChaletsFragment"
     android:orientation="vertical"
+    android:background="@drawable/background_solid"
     >
 
     <androidx.recyclerview.widget.RecyclerView

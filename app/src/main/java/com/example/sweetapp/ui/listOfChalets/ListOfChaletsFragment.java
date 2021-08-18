@@ -84,7 +84,7 @@ public class ListOfChaletsFragment extends Fragment {
                     @Override
                     public void onItemClick(int position) {
                         Toast.makeText(getContext(), "" + position, Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getContext(), DetailsTenantActivity.class);
+                        Intent intent = new Intent(getContext(), DetailsActivity.class);
                         intent.putExtra("chaletId", models.get(position).getChaletId() + "");
                         getContext().startActivity(intent);
                     }

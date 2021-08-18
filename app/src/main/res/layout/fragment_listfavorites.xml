@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".ui.listFavoritesFragment.ListFavoritesFragment"
     android:orientation="vertical"
+    android:background="@drawable/background_solid"
     >
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rec_favlist"

@@ -31,6 +31,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.manojbhadane.QButton;
 
 import java.util.HashMap;
 
@@ -49,7 +50,7 @@ public class AccountManagementFragment extends Fragment {
     EditText TenantName,TenantPhone,TenantEmail;
     String name,phone,email;
     ImageView image_tenant;
-    Button TenantRegister;
+    QButton TenantRegister;
     FirebaseAuth mAuth;
 
     public View onCreateView(@NonNull LayoutInflater inflater,

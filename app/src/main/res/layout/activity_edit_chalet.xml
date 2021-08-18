@@ -217,7 +217,7 @@
 
         >
 
-        <TextView
+        <com.manojbhadane.QButton
             android:id="@+id/txt_Services1"
             android:layout_width="100dp"
             android:layout_height="wrap_content"

@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -45,7 +47,7 @@ public class TenantMainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_account_management_tenant, R.id.nav_list_of_chalets_tenant, R.id.nav_listOfRequests_tenant)
+                R.id.nav_account_management_tenant, R.id.nav_list_of_chalets_tenant, R.id.nav_list_of_favorite_tenant)
                 .setDrawerLayout(drawer)
                 .build();
 
@@ -109,11 +111,12 @@ public class TenantMainActivity extends AppCompatActivity {
         finish();
     }
 
-    @Override
-    protected void onStart()
-    {
-        super.onStart();
-        getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_tenant, new ListOfChaletsTenantFragment()).commit();
-    }
+//    @Override
+//    protected void onStart()
+//    {
+//        super.onStart();
+//        getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_tenant, new ListOfChaletsTenantFragment()).commit();
+//    }
+
 
 }
