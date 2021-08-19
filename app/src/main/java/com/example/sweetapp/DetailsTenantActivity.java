@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
@@ -16,6 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.denzcoskun.imageslider.ImageSlider;
 import com.example.sweetapp.model.ChaletListIteamModel;
 import com.example.sweetapp.model.Rating;
 import com.google.android.gms.common.internal.service.Common;
@@ -68,6 +70,7 @@ public class DetailsTenantActivity extends AppCompatActivity implements RatingDi
         txt_numOfHours_details = findViewById(R.id.txt_numOfHours_details);
         reservation = findViewById(R.id.reservation_btn);
         add_rating = findViewById(R.id.add_rating);
+
         arrayList = new ArrayList();
         rating_all =  findViewById(R.id.rating_all);
         mAuth = FirebaseAuth.getInstance();
